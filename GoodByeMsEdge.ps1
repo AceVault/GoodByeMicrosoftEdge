@@ -6,5 +6,9 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     }
    }
 taskkill /f /im msedge.exe
-Remove-Item  -Recurse "C:\Program Files (x86)\Microsoft\edge*"
+Start-Sleep 1
+Remove-Item  -Recurse "C:\Program Files (x86)\Microsoft\Edge"
+Remove-Item  -Recurse "C:\Program Files (x86)\Microsoft\EdgeUpdate"
+Remove-Item  -Recurse "C:\Program Files (x86)\Microsoft\EdgeCore"
 Write-Output "Microsoft Edge has been uninstalled until the next update. Enjoy!"
+Start-Sleep 1
