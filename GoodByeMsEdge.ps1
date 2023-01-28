@@ -10,8 +10,8 @@ Start-Sleep 1
 takeown /a /r /d Y /f "C:\Program Files (x86)\Microsoft\Edge"
 takeown /a /r /d Y /f "C:\Program Files (x86)\Microsoft\EdgeUpdate"
 takeown /a /r /d Y /f "C:\Program Files (x86)\Microsoft\EdgeCore"
-Remove-Item  -Recurse "C:\Program Files (x86)\Microsoft\Edge"
-Remove-Item  -Recurse "C:\Program Files (x86)\Microsoft\EdgeUpdate"
-Remove-Item  -Recurse "C:\Program Files (x86)\Microsoft\EdgeCore"
+Remove-Item  -Recurse -Force "C:\Program Files (x86)\Microsoft\Edge"
+Remove-Item  -Recurse -Force "C:\Program Files (x86)\Microsoft\EdgeUpdate"
+Remove-Item  -Recurse -Force "C:\Program Files (x86)\Microsoft\EdgeCore"
 Write-Output "Microsoft Edge has been uninstalled until the next update. Enjoy!"
 Start-Sleep 1
